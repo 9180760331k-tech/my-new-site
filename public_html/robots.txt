@@ -1,5 +1,0 @@
-# Перед публикацией замените REPLACE-WITH-YOUR-DOMAIN.ru на основной домен сайта.
-User-agent: *
-Allow: /
-
-Sitemap: https://REPLACE-WITH-YOUR-DOMAIN.ru/sitemap.xml

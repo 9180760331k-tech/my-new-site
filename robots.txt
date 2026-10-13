@@ -1,0 +1,5 @@
+# https://9180760331k-tech.github.io/my-new-site/
+User-agent: *
+Allow: /
+
+Sitemap: https://9180760331k-tech.github.io/my-new-site/sitemap.xml
