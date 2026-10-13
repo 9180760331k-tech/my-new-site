@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.classList.add("js");</script>
 <!-- Канонический адрес: https://9180760331k-tech.github.io/my-new-site/ -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8f7f5">
+<meta name="theme-color" content="#101116">
 <title>Екатерина — SEO-продвижение и Яндекс Директ | Digital-маркетолог</title>
 <meta name="description" content="SEO-продвижение сайтов, настройка и ведение Яндекс Директ, создание сайтов и цифровые решения для бизнеса. Екатерина — специалист по digital-маркетингу. Обсудить проект.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -26,6 +27,7 @@
 <meta name="twitter:description" content="SEO-продвижение сайтов, настройка и ведение Яндекс Директ, создание сайтов и цифровые решения для бизнеса. Екатерина — специалист по digital-маркетингу. Обсудить проект.">
 <meta name="twitter:image" content="https://9180760331k-tech.github.io/my-new-site/og-image.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="assets/images/ekaterina.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="assets/css/style.css">
 <!-- Яндекс Вебмастер: после подтверждения сайта добавьте сюда <meta name="yandex-verification" content="КОД"> -->
@@ -56,20 +58,19 @@
 </script>
 <noscript>
   <style>
-    @media (max-width: 900px) {
+    .reveal { opacity: 1 !important; transform: none !important; }
+    @media (max-width: 960px) {
       .nav-toggle { display: none !important; }
       .nav {
         display: flex !important;
         position: static !important;
-        flex-direction: column;
         width: 100%;
         margin-top: 8px;
         border: 0;
-        box-shadow: none;
         background: transparent;
         padding: 0;
       }
-      .header-inner { flex-wrap: wrap; }
+      .header-inner { flex-wrap: wrap; height: auto; padding: 12px 0; }
     }
   </style>
 </noscript>
@@ -100,55 +101,67 @@
 <main id="content">
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero-grid">
-      <div class="hero-text">
-        <p class="eyebrow">Digital-маркетинг</p>
-        <h1 id="hero-title" tabindex="-1">SEO-продвижение и <em>Яндекс Директ</em> для развития бизнеса</h1>
-        <p class="lead"><strong>Помогаю бизнесу расти в интернете.</strong> Я Екатерина, специалист по digital-маркетингу. Собираю продвижение, рекламу и сайты в одну систему — чтобы ваш бизнес находили и выбирали.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">SEO / Performance / Digital</p>
+        <h1 id="hero-title" tabindex="-1">Ваш бизнес должен быть <em>заметным</em>. И точка.</h1>
+        <p class="lead">SEO-продвижение, Яндекс Директ и сайты, которые работают на задачи бизнеса. Соединяю стратегию, технологии и маркетинг в единую систему.</p>
         <div class="buttons">
           <a class="button primary" href="https://t.me/KaterinaAbora" target="_blank" rel="noopener noreferrer">Обсудить проект <span aria-hidden="true">↗</span></a>
           <a class="button secondary" href="#services">Мои услуги <span aria-hidden="true">↓</span></a>
         </div>
-        <p class="hero-note">Системный подход к продвижению бизнеса</p>
+        <p class="hero-rail">Екатерина · digital-маркетолог</p>
       </div>
       <div class="portrait-wrap">
-        <div class="orbit" aria-hidden="true"></div>
+        <div class="portrait-mark" aria-hidden="true"></div>
         <div class="portrait-frame">
           <img src="assets/images/ekaterina.webp" width="1000" height="1250" alt="Екатерина — специалист по digital-маркетингу" fetchpriority="high">
         </div>
-        <div class="mini-label"><span aria-hidden="true">✳</span> SEO · ADS · DIGITAL</div>
+        <p class="portrait-caption"><span>01</span> SEO · Direct · Web</p>
       </div>
     </div>
   </section>
 
-  <section class="section section-white" id="services" tabindex="-1" aria-labelledby="services-title">
+  <section class="section section-alt" id="services" tabindex="-1" aria-labelledby="services-title">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-head reveal">
         <div>
           <p class="eyebrow">01 / Услуги</p>
-          <h2 id="services-title">Решения для вашего бизнеса</h2>
+          <h2 id="services-title">Не просто продвижение. <em>Система</em> привлечения клиентов.</h2>
         </div>
-        <p class="section-desc">От поискового продвижения и рекламы до сайта, который помогает получить обращение.</p>
+        <p class="section-desc">У каждого бизнеса свои задачи. Подбираю инструменты, которые помогают находить аудиторию, привлекать внимание и превращать интерес в обращения.</p>
       </div>
       <div class="services">
-        <article class="service feature">
-          <div class="service-top"><span class="service-number">01 / SEO</span><span class="service-symbol" aria-hidden="true">⌕</span></div>
-          <h3>SEO-продвижение</h3>
-          <p>Собираю семантику, выстраиваю структуру и контент сайта. Задача — чтобы потенциальные клиенты находили бизнес в поиске.</p>
+        <article class="service service-priority reveal">
+          <span class="service-index">01</span>
+          <div>
+            <h3>SEO-продвижение</h3>
+            <p class="service-line">Чтобы вас находили. Не случайно, а в поиске.</p>
+            <p>Поисковая оптимизация, семантика, структура сайта, контент и техническая составляющая. Работа над видимостью бизнеса в Яндексе и Google.</p>
+          </div>
         </article>
-        <article class="service feature">
-          <div class="service-top"><span class="service-number">02 / РЕКЛАМА</span><span class="service-symbol" aria-hidden="true">↗</span></div>
-          <h3>Яндекс Директ</h3>
-          <p>Стратегия, настройка и ведение кампаний. Смотрю на заявки и рекламный бюджет, а не только на клики.</p>
+        <article class="service service-priority reveal">
+          <span class="service-index">02</span>
+          <div>
+            <h3>Яндекс Директ</h3>
+            <p class="service-line">Не просто клики. Потенциальные клиенты.</p>
+            <p>Стратегия, настройка и ведение контекстной рекламы, анализ запросов, контроль бюджета и оптимизация кампаний.</p>
+          </div>
         </article>
-        <article class="service">
-          <div class="service-top"><span class="service-number">03 / WEB</span><span class="service-symbol" aria-hidden="true">▣</span></div>
-          <h3>Создание сайтов</h3>
-          <p>Лендинги и сайты с понятной структурой и коротким путём к обращению. Сразу учитываю дальнейшее продвижение.</p>
+        <article class="service reveal">
+          <span class="service-index">03</span>
+          <div>
+            <h3>Создание сайтов</h3>
+            <p class="service-line">Сайт, который ведёт к действию.</p>
+            <p>Современные лендинги и сайты с понятной структурой, удобной навигацией и вниманием к пользовательскому пути.</p>
+          </div>
         </article>
-        <article class="service">
-          <div class="service-top"><span class="service-number">04 / AI</span><span class="service-symbol" aria-hidden="true">✳</span></div>
-          <h3>ИИ и автоматизация</h3>
-          <p>Подключаю ИИ-инструменты для контента, маркетинга и рутинных задач — там, где они сокращают время на работу.</p>
+        <article class="service reveal">
+          <span class="service-index">04</span>
+          <div>
+            <h3>ИИ и автоматизация</h3>
+            <p class="service-line">Меньше рутины. Больше возможностей.</p>
+            <p>ИИ-инструменты, цифровые ассистенты, автоматизация процессов и интеллектуальные решения для маркетинговых задач.</p>
+          </div>
         </article>
       </div>
     </div>
@@ -156,63 +169,68 @@
 
   <section class="section" id="about" tabindex="-1" aria-labelledby="about-title">
     <div class="container about-grid">
-      <div>
+      <div class="reveal">
         <p class="eyebrow">02 / Обо мне</p>
-        <h2 id="about-title">Маркетинг — это не просто трафик. Это система.</h2>
+        <h2 id="about-title">Маркетинг — это не набор инструментов. Это умение видеть картину <em>целиком</em>.</h2>
       </div>
-      <div class="about-copy">
-        <p>Я Екатерина. Работаю с SEO, контекстной рекламой, сайтами и цифровыми инструментами.</p>
-        <p>Для меня важно не просто запустить рекламу или создать сайт, а понять, <strong>какую задачу бизнеса они должны решать</strong>. Смотрю на проект целиком: аудитория, предложение, сайт, продвижение и аналитика должны работать вместе.</p>
-        <blockquote class="quote">Сначала бизнес-задача. Затем стратегия, инструменты и действия.</blockquote>
+      <div class="about-copy reveal">
+        <p>Я Екатерина. Работаю на пересечении маркетинга, технологий и цифровых решений.</p>
+        <p>Для меня важно не просто создать сайт, запустить рекламу или настроить продвижение. Важно понимать, какую задачу бизнеса решает каждый инструмент и как все элементы работают вместе.</p>
+        <p>Сильный digital начинается с понимания аудитории, грамотной стратегии и внимания к деталям.</p>
+        <blockquote class="quote">Сначала смысл. Затем стратегия. Потом инструменты.</blockquote>
       </div>
     </div>
   </section>
 
-  <section class="section section-white" id="approach" tabindex="-1" aria-labelledby="approach-title">
+  <section class="section section-alt" id="approach" tabindex="-1" aria-labelledby="approach-title">
     <div class="container">
-      <p class="eyebrow">03 / Подход</p>
-      <h2 id="approach-title">Понятный процесс. Продуманные решения.</h2>
+      <div class="reveal">
+        <p class="eyebrow">03 / Подход</p>
+        <h2 id="approach-title">Хороший результат не начинается с кнопки «<em>Запустить</em>».</h2>
+      </div>
       <ol class="steps">
-        <li class="step"><span>01</span><h3>Анализ</h3><p>Разбираюсь в бизнесе, целевой аудитории, конкурентах и задачах.</p></li>
-        <li class="step"><span>02</span><h3>Стратегия</h3><p>Определяю приоритеты и подбираю каналы продвижения.</p></li>
-        <li class="step"><span>03</span><h3>Реализация</h3><p>Выстраиваю и запускаю подходящие digital-решения.</p></li>
-        <li class="step"><span>04</span><h3>Оптимизация</h3><p>Анализирую показатели и ищу возможности для улучшения.</p></li>
+        <li class="step reveal"><span>01</span><h3>Анализ</h3><p>Погружаюсь в задачи бизнеса, изучаю аудиторию, конкурентов и точки роста.</p></li>
+        <li class="step reveal"><span>02</span><h3>Стратегия</h3><p>Определяю приоритеты и подбираю эффективное сочетание инструментов.</p></li>
+        <li class="step reveal"><span>03</span><h3>Реализация</h3><p>Выстраиваю и запускаю digital-решения.</p></li>
+        <li class="step reveal"><span>04</span><h3>Оптимизация</h3><p>Анализирую показатели, корректирую действия и работаю над эффективностью.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="project-title">
-    <div class="container">
-      <div class="side-project">
-        <div>
-          <p class="eyebrow">За пределами маркетинга</p>
-          <h2 id="project-title">Катя про ИИ ✳</h2>
-          <p>Мой личный проект о нейросетях и современных технологиях. Экспериментирую с инструментами и делюсь практическими находками простым языком.</p>
-        </div>
-        <div class="side-links">
-          <a class="chip" href="https://t.me/ai_s_katey" target="_blank" rel="noopener noreferrer">Канал в Telegram <span aria-hidden="true">↗</span></a>
-          <a class="chip" href="https://max.ru/channel_katya_pro_al" target="_blank" rel="noopener noreferrer">Канал в MAX <span aria-hidden="true">↗</span></a>
-        </div>
+  <section class="section journal" aria-labelledby="project-title">
+    <div class="container journal-grid">
+      <div class="reveal">
+        <p class="eyebrow">Личный проект</p>
+        <h2 id="project-title">Технологии меняются. Любопытство остаётся.</h2>
+        <p class="journal-kicker">Катя про ИИ ✳</p>
+        <p>Мой личный проект об искусственном интеллекте. Исследую возможности нейросетей, экспериментирую с инструментами и делюсь практическими находками простым языком.</p>
+      </div>
+      <div class="side-links reveal">
+        <a class="chip" href="https://t.me/ai_s_katey" target="_blank" rel="noopener noreferrer">Канал в Telegram <span aria-hidden="true">↗</span></a>
+        <a class="chip" href="https://max.ru/channel_katya_pro_al" target="_blank" rel="noopener noreferrer">Канал в MAX <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </section>
 
   <section class="section contact" id="contacts" tabindex="-1" aria-labelledby="contacts-title">
     <div class="container">
-      <p class="eyebrow">04 / Контакты</p>
-      <h2 id="contacts-title">Давайте обсудим ваш проект.</h2>
-      <p>Расскажите о бизнесе и задаче. Обсудим, какие digital-инструменты подойдут для её решения. Примеры работ предоставлю по запросу.</p>
+      <div class="reveal">
+        <p class="eyebrow">04 / Контакты</p>
+        <h2 id="contacts-title">У вашего бизнеса есть задача. Давайте найдём <em>решение</em>.</h2>
+        <p class="contact-lead">Расскажите о своём проекте, целях и задачах. Обсудим, какие инструменты продвижения подойдут именно вашему бизнесу.</p>
+        <p class="contact-note">Примеры работ предоставляю по запросу.</p>
+      </div>
       <address class="contact-links">
-        <a href="https://t.me/KaterinaAbora" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a>
-        <a href="https://max.ru/u/f9LHodD0cOK8-HxPPA3dqg0-fHJSx7zQ30fWcVkNC36_o7ZW6KzvtNd_kcQ" target="_blank" rel="noopener noreferrer">Написать в MAX <span aria-hidden="true">↗</span></a>
-        <a href="mailto:ckaaico@gmail.com">Связаться по электронной почте <span aria-hidden="true">↗</span></a>
+        <a href="https://t.me/KaterinaAbora" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a>
+        <a href="https://max.ru/u/f9LHodD0cOK8-HxPPA3dqg0-fHJSx7zQ30fWcVkNC36_o7ZW6KzvtNd_kcQ" target="_blank" rel="noopener noreferrer">MAX <span aria-hidden="true">↗</span></a>
+        <a href="mailto:ckaaico@gmail.com">ckaaico@gmail.com</a>
       </address>
     </div>
   </section>
 </main>
 <footer class="footer">
   <div class="container footer-inner">
-    <span>© <span id="year">2026</span> Екатерина · Digital-маркетинг</span>
+    <span>© <span id="year">2026</span> Екатерина / Digital-маркетинг</span>
     <a href="mailto:ckaaico@gmail.com">ckaaico@gmail.com</a>
   </div>
 </footer>

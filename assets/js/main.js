@@ -6,12 +6,31 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var revealNodes = document.querySelectorAll(".reveal");
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.14, rootMargin: "0px 0px -32px 0px" });
+    Array.prototype.forEach.call(revealNodes, function (node) {
+      revealObserver.observe(node);
+    });
+  } else {
+    Array.prototype.forEach.call(revealNodes, function (node) {
+      node.classList.add("is-in");
+    });
+  }
+
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   var header = document.querySelector(".header");
   if (!toggle || !nav || !header) return;
 
-  var desktopQuery = window.matchMedia("(min-width: 901px)");
+  var desktopQuery = window.matchMedia("(min-width: 961px)");
 
   function isOpen() {
     return toggle.getAttribute("aria-expanded") === "true";
