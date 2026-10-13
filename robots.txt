@@ -1,5 +1,5 @@
-# https://9180760331k-tech.github.io/my-new-site/
+# https://kat-web.ru/
 User-agent: *
 Allow: /
 
-Sitemap: https://9180760331k-tech.github.io/my-new-site/sitemap.xml
+Sitemap: https://kat-web.ru/sitemap.xml
